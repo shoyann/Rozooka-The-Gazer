@@ -1,0 +1,49 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+!.env.local.example
+backend/identification/pimeyes_cookies.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.venv/
+venv/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Convex generated files
+frontend/convex/_generated/
+
+# Runtime logs and local verification artifacts
+*.log
+*.err.log
+*.out.log
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.mov
+*.avi
+
+# Codex / local scratch
+.codex-temp/
+frontend/.codex/
+backend/curl_*.txt
+backend/health_*.txt
+backend/server_terminal.txt
+backend/capture-response*.json
+backend/capture_test_response.json
