@@ -1,10 +1,6 @@
 # ROZOOKA // THE GAZER
 
-<table>
-<tr>
-<td width="50%" align="center">
-
-<pre>
+```text
 ██████████████████████████████████████████████████████
 ██████████████████████████████████████████████████████
 ██████████████████████████████████████████████████████
@@ -30,29 +26,18 @@
 ████████████████              ████████████████
 ████████████████                ████████████████
 ████████████████                  ████████████████
-</pre>
+```
 
-</td>
-<td width="50%" align="center">
-
-<img src="./assets/rozooka-the-gazer.png" width="420" alt="ROZOOKA // THE GAZER emblem" />
-
-</td>
-</tr>
-</table>
-
-<p align="center">
-  <strong>PUBLIC-SOURCE DUE DILIGENCE AGENT</strong><br/>
-  Controlled OSINT research console.<br/>
-  Capture. Resolve. Enrich. Synthesize. Display.
-</p>
+> PUBLIC-SOURCE DUE DILIGENCE AGENT  
+> Controlled OSINT research console.  
+> Capture. Resolve. Enrich. Synthesize. Display.
 
 ---
 
 ## 00 // SYSTEM DESIGNATION
 
 ```text
-SYSTEM:         ROZOOKA // THE GAZER
+WEAPON:         ROZOOKA // THE GAZER
 CLASS:          Local public-source due diligence agent
 ROLE:           Person-level OSINT research and intelligence board
 MISSION:        Capture -> Resolve -> Enrich -> Synthesize -> Display
@@ -93,7 +78,7 @@ DUE DILIGENCE DOSSIER SYNTHESIS
 REAL-TIME OPERATOR DISPLAY
 ```
 
-The system demonstrates a person-level public-source research workflow:
+The system is built to demonstrate a person-level public-source research workflow:
 
 ```text
 See subject
@@ -172,8 +157,6 @@ Weak evidence must remain weak evidence.
 the-gazer/
 |-- backend/              # FastAPI capture, identity, enrichment, synthesis pipeline
 |-- frontend/             # Next.js + Tailwind tactical console
-|-- assets/               # Emblems, images, visual assets
-|   `-- rozooka-the-gazer.png
 |-- HANDOFF.md            # Current project status and handoff notes
 |-- SYSTEM_DESIGN.md      # Product/system design
 |-- ARCHITECTURE.md       # Runtime architecture and API contracts
