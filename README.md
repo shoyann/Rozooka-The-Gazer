@@ -1,229 +1,143 @@
-# ROZOOKA // THE GAZER
+<p align="center">
+  <img src="Rozooka-The%20Gazer.png" alt="Rozooka eye emblem on a warm paper background" width="220" />
+</p>
 
-```text
-██████████████████████████████████████████████████████
-██████████████████████████████████████████████████████
-██████████████████████████████████████████████████████
-████████████████████              ████████████████████
-████████████████                      ████████████████
-█████████████                            █████████████
-███████████           ██████████           ███████████
-██████████           ████████████           ██████████
-█████████           ██████████████           █████████
-██████████           ████████████           ██████████
-████████████          ██████████          ████████████
-██████████████                          ██████████████
-██████████████████                  ██████████████████
-████████████████████████      ████████████████████████
-██████████████████████████████████████████████████████
-████████████████  ████████████████          ██████████
-████████████████   ███████████████            ████████
-████████████████     ████████████████           ██████
-████████████████       ████████████████           ████
-████████████████         ████████████████           ██
-████████████████           ████████████████
-████████████████             ███████████████
-████████████████              ████████████████
-████████████████                ████████████████
-████████████████                  ████████████████
-```
+<h1 align="center">ROZOOKA // THE GAZER</h1>
 
-> PUBLIC-SOURCE DUE DILIGENCE AGENT  
-> Controlled OSINT research console.  
-> Capture. Resolve. Enrich. Synthesize. Display.
+<p align="center">
+  <strong>A public-source due diligence research console.</strong><br>
+  Capture. Resolve. Enrich. Synthesize. Display.
+</p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-0.1.0-C79A46?style=for-the-badge" alt="Project version 0.1.0" />
+  <img src="https://img.shields.io/badge/Status-Prototype-9B6BCC?style=for-the-badge" alt="Status: prototype" />
+  <img src="https://img.shields.io/badge/Research-Public_Sources-56876D?style=for-the-badge" alt="Public-source research" />
+</p>
 
-## 00 // SYSTEM DESIGNATION
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-14-000000?style=for-the-badge&amp;logo=nextdotjs&amp;logoColor=white" alt="Next.js 14" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&amp;logo=typescript&amp;logoColor=white" alt="TypeScript 5" />
+  <img src="https://img.shields.io/badge/Python-3.11–3.13-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="Python 3.11 through 3.13" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI backend" />
+  <img src="https://img.shields.io/badge/Convex-Realtime-EE342F?style=for-the-badge" alt="Convex real-time persistence" />
+</p>
 
-```text
-WEAPON:         ROZOOKA // THE GAZER
-CLASS:          Local public-source due diligence agent
-ROLE:           Person-level OSINT research and intelligence board
-MISSION:        Capture -> Resolve -> Enrich -> Synthesize -> Display
-FRONTEND:       Next.js 14 tactical console
-BACKEND:        FastAPI intelligence pipeline
-DATA PLANE:     Convex real-time persistence
-STATUS:         Prototype / demo-ready when armed with valid keys
-```
-
-The Gazer is a public-source due diligence agent adapted from the JARVIS pipeline.
-
-It ingests image, video, or live camera input.  
-It detects visible faces.  
-It attempts identity resolution.  
-It enriches findings with public web intelligence.  
-It synthesizes structured due diligence dossiers.  
-It streams results to a live operator console.
-
-This is not a production surveillance platform.
-
-This is a controlled OSINT and due diligence demonstration system.
+<p align="center">
+  <a href="#overview">Overview</a> ·
+  <a href="#capabilities">Capabilities</a> ·
+  <a href="#setup-and-api-reference">Setup</a> ·
+  <a href="#verification">Verification</a> ·
+  <a href="#documentation">Documentation</a>
+</p>
 
 ---
 
-## 01 // MISSION PROFILE
+## Overview
+
+The Gazer is a public-source due diligence prototype adapted from the JARVIS pipeline. It brings media intake, research, structured dossiers, and a live operator board into one console.
+
+The interface presents source material and research findings for review. Identity matches remain candidates unless corroborated; weak evidence must remain weak evidence.
+
+**Project version: 0.1.0.** This matches the frontend and backend package metadata. The project is intended for controlled demonstrations and consent-aware research experiments.
+
+## Workflow
 
 ```text
-INPUT MEDIA
-   ↓
-FACE ACQUISITION
-   ↓
-IDENTITY CANDIDATE GENERATION
-   ↓
-PUBLIC-SOURCE ENRICHMENT
-   ↓
-DUE DILIGENCE DOSSIER SYNTHESIS
-   ↓
-REAL-TIME OPERATOR DISPLAY
+Capture → Resolve → Enrich → Synthesize → Display
 ```
 
-The system is built to demonstrate a person-level public-source research workflow:
+| Stage | Purpose |
+| --- | --- |
+| Capture | Accept image, video, or camera input. |
+| Resolve | Present identity candidates or operator-supplied context. |
+| Enrich | Gather public-source research and supporting signals. |
+| Synthesize | Organize findings into a structured dossier. |
+| Display | Present records, sources, and service status in the live console. |
+
+## Capabilities
+
+| Area | Included components |
+| --- | --- |
+| Media intake | Image uploads, video frames, and camera frames |
+| Detection and candidate handling | OpenCV detection, identity candidates, and manual review |
+| Public-source research | Exa search, Sherlock, and optional Browser Use research |
+| Dossier synthesis | Anthropic when configured, with Gemini fallback |
+| Live console | Convex-backed records, intelligence cards, dossiers, and service indicators |
+| Reduced-capability reporting | Missing-service status and partial findings when integrations are unavailable |
+
+## Project structure
 
 ```text
-See subject
--> detect face
--> generate candidate identity
--> collect public signals
--> synthesize due diligence dossier
--> display intelligence card
+Rozooka-The-Gazer/
+├── backend/             # FastAPI research pipeline
+├── frontend/            # Next.js console and Convex functions
+├── HANDOFF.md           # Recorded project status and handoff
+├── SYSTEM_DESIGN.md     # Product behavior and design
+├── ARCHITECTURE.md      # Runtime architecture and API contracts
+└── README.md            # Project overview and setup reference
 ```
 
-If confidence is weak, the system does not fake certainty.
+## Setup and API reference
 
-Weak evidence must remain weak evidence.
+Expand the sections below for the existing local setup and API instructions. The example paths refer to the original development checkout; use the corresponding folder in your own checkout.
 
----
+<details>
+<summary><strong>Backend startup</strong></summary>
 
-## 02 // CAPABILITIES
-
-### Acquisition
-
-- Image intake  
-  Upload a face image and process it through the full pipeline.
-
-- Video intake  
-  Upload a video and extract frames at 1 FPS for face detection.
-
-- Camera intake  
-  Submit base64 frames from a webcam stream.
-
-### Detection
-
-- Face detection  
-  OpenCV Haar Cascade.
-
-### Identity Resolution
-
-- Identity search  
-  PimEyes cookie-backed direct HTTP flow.
-
-- Manual fallback  
-  Operator-supplied person name when automated identity confidence is insufficient.
-
-- Candidate handling  
-  Identity matches are treated as candidates unless corroborated by supporting evidence.
-
-### Enrichment
-
-- Exa fast search.
-- Sherlock local OSINT.
-- Optional Browser Use deep research.
-- Public-source profile and signal aggregation.
-- Evidence-aware enrichment with degraded-mode reporting.
-
-### Synthesis
-
-- Anthropic preferred when configured.
-- Gemini fallback when Anthropic is unavailable.
-- Structured dossier generation.
-- Confidence-aware narrative synthesis.
-
-### Display
-
-- Convex-backed real-time board.
-- Intel cards.
-- Status panels.
-- Dossier display.
-- Capture records.
-- Person records.
-- Service capability indicators.
-
----
-
-## 03 // SYSTEM LAYOUT
-
-```text
-the-gazer/
-|-- backend/              # FastAPI capture, identity, enrichment, synthesis pipeline
-|-- frontend/             # Next.js + Tailwind tactical console
-|-- HANDOFF.md            # Current project status and handoff notes
-|-- SYSTEM_DESIGN.md      # Product/system design
-|-- ARCHITECTURE.md       # Runtime architecture and API contracts
-`-- README.md             # Operator manual
-```
-
----
-
-## 04 // BACKEND ARMING SEQUENCE
-
-Move into the backend chamber:
+Open the backend directory:
 
 ```powershell
 cd C:\Users\Yann\Desktop\the-gazer\backend
 ```
 
-Start the intelligence pipeline:
+Start the backend:
 
 ```powershell
 uv run uvicorn main:app --reload --port 8000
 ```
 
-Confirm the system is alive:
+Check backend health:
 
 ```powershell
 curl http://127.0.0.1:8000/api/health
 ```
 
-Expected heartbeat:
+The health endpoint returns the backend status. Check `/api/services` for individual integration availability.
 
-```text
-Backend online.
-Services reporting.
-Pipeline ready.
-```
+</details>
 
----
+<details>
+<summary><strong>Frontend startup</strong></summary>
 
-## 05 // FRONTEND ARMING SEQUENCE
-
-Move into the frontend console:
+Open the frontend directory:
 
 ```powershell
 cd C:\Users\Yann\Desktop\the-gazer\frontend
 ```
 
-Install payload dependencies:
+Install dependencies:
 
 ```powershell
 npm install
 ```
 
-Start the tactical board:
+Start the frontend:
 
 ```powershell
 npm run dev -- --port 3001
 ```
 
-Open the operator console:
+Open the console:
 
 ```text
 http://127.0.0.1:3001/
 ```
 
----
+</details>
 
-## 06 // CONVEX DATA PLANE
+<details>
+<summary><strong>Convex persistence</strong></summary>
 
 Move into the frontend directory:
 
@@ -247,9 +161,10 @@ Convex is the live data plane.
 
 Without Convex, the operator board loses real-time persistence.
 
----
+</details>
 
-## 07 // AMMUNITION
+<details>
+<summary><strong>Environment configuration</strong></summary>
 
 Create:
 
@@ -263,7 +178,7 @@ from:
 backend/.env.example
 ```
 
-Minimum useful loadout:
+Core service settings:
 
 ```text
 CONVEX_URL=
@@ -271,20 +186,20 @@ EXA_API_KEY=
 GEMINI_API_KEY=
 ```
 
-High-impact loadout:
+Optional service settings:
 
 ```text
-ANTHROPIC_API_KEY=       # stronger dossier narrative
+ANTHROPIC_API_KEY=       # optional dossier provider
 BROWSER_USE_API_KEY=     # browser-driven deep research
 ```
 
-Identity-search loadout:
+Identity-search configuration:
 
 ```text
 backend/identification/pimeyes_cookies.json
 ```
 
-Never commit live ammunition.
+Keep credentials and private artifacts out of Git.
 
 ```text
 DO NOT COMMIT:
@@ -295,9 +210,10 @@ DO NOT COMMIT:
 - private research artifacts
 ```
 
----
+</details>
 
-## 08 // API FIRE CONTROL
+<details>
+<summary><strong>API reference</strong></summary>
 
 Primary system endpoints:
 
@@ -311,16 +227,16 @@ GET  /api/person/{id}
 GET  /api/research/{name}/stream
 ```
 
-Image upload strike:
+Image upload example:
 
 ```powershell
 curl -X POST "http://127.0.0.1:8000/api/capture?person_name=Elon%20Musk" `
   -F "file=@C:\path\to\face.jpg"
 ```
 
----
+</details>
 
-## 09 // VERIFICATION PROTOCOL
+## Verification
 
 Backend verification:
 
@@ -337,46 +253,16 @@ cd C:\Users\Yann\Desktop\the-gazer\frontend
 npm run build
 ```
 
-Current expected baseline:
+The [handoff record](HANDOFF.md) dated June 4, 2026 reports a successful backend import, 12 passing backend tests, and a successful frontend build. These are recorded results, not a guarantee that every external integration is currently available.
 
-```text
-BACKEND_IMPORT_OK
-12 backend tests passed
-Next.js production build passed
-```
+## Project status
 
-If these checks pass, the system is assembled.
+This is a prototype with a documented end-to-end demo workflow. Its available features depend on configured services, provider quotas, and the local environment. See the [handoff record](HANDOFF.md) for the original readiness notes.
 
----
+<details>
+<summary><strong>Service availability and degraded behavior</strong></summary>
 
-## 10 // CURRENT READINESS
-
-The core chain is operational:
-
-```text
-Input media
--> face detection
--> identity candidate / manual fallback
--> Convex person record
--> Exa enrichment
--> partial or full dossier synthesis
--> live frontend board
-```
-
-System strength increases when armed with:
-
-- Fresh PimEyes cookies.
-- Usable Gemini quota or Anthropic key.
-- Browser Use key for optional deep research.
-- Pre-verified demo images and videos.
-- Known consent-based demonstration subjects.
-- Clean operator test cases.
-
----
-
-## 11 // DEGRADED MODE
-
-The Gazer is built to degrade, not detonate.
+Unavailable integrations are reported as reduced capability.
 
 Missing APIs should not hard-crash the system.
 
@@ -402,115 +288,32 @@ If Convex is unavailable:
   real-time persistence is degraded
 ```
 
----
+</details>
 
-## 12 // RULES OF ENGAGEMENT
+## Research principles
 
-The Gazer is intended for:
+The project is intended for controlled demonstrations, consent-aware due diligence, public-source research experiments, and analyst-interface prototyping.
 
-- Controlled demonstrations.
-- Consent-aware due diligence workflows.
-- Public-source research experiments.
-- Intelligence UI prototyping.
-- Evidence-handling demonstrations.
-- Internal analyst workflow design.
+- **Keep candidates distinct from confirmed findings.** Identity inference can be wrong and may require manual review.
+- **Preserve source context.** Include source links, timestamps, conflicting evidence, and missing evidence wherever possible.
+- **Keep uncertainty visible.** Public signals can be stale, duplicated, misleading, or fabricated.
+- **Treat dossiers as research artifacts.** A generated narrative does not establish that its claims are true.
 
-The system must not present weak signals as confirmed truth.
+> Evidence before narrative. Sources before assumptions. Manual review before certainty.
 
-Identity inference can be wrong.
+## Documentation
 
-Public signals can be stale, misleading, duplicated, or fabricated.
-
-Operational law:
-
-```text
-If evidence is weak:
-  classify as candidate
-
-If identity is uncertain:
-  mark manual_review_required
-
-If confidence is not earned:
-  do not display certainty
-
-If only one source exists:
-  preserve uncertainty
-
-If the system does not know:
-  say it does not know
-```
-
-Do not fake confirmation.
-
-Do not overwrite doubt.
-
-Do not turn candidates into confirmed identities.
+| Document | What it covers |
+| --- | --- |
+| [Development handoff](HANDOFF.md) | Recorded project state, setup notes, and prior verification |
+| [System design](SYSTEM_DESIGN.md) | Product behavior and next-stage design |
+| [Architecture](ARCHITECTURE.md) | Runtime components and API contracts |
+| [Backend configuration example](backend/.env.example) | Available backend environment settings |
+| [Frontend configuration example](frontend/.env.local.example) | Frontend environment settings |
 
 ---
 
-## 13 // EVIDENCE DOCTRINE
-
-The Gazer should preserve source context wherever possible.
-
-A dossier is not truth.
-
-A dossier is a structured research artifact.
-
-```text
-Evidence > narrative
-Sources > assumptions
-Corroboration > confidence
-Uncertainty > false certainty
-Manual review > automated overreach
-```
-
-Every generated profile should make room for:
-
-- Source links.
-- Confidence level.
-- Conflicting evidence.
-- Missing evidence.
-- Manual review status.
-- Timestamped findings.
-
----
-
-## 14 // DOCUMENTATION
-
-Development handoff:
-
-```text
-HANDOFF.md
-```
-
-System behavior and next-stage design:
-
-```text
-SYSTEM_DESIGN.md
-```
-
-Runtime architecture and API contracts:
-
-```text
-ARCHITECTURE.md
-```
-
----
-
-## 15 // OPERATOR SUMMARY
-
-```text
-ROZOOKA // THE GAZER
-is a local public-source due diligence agent.
-
-It sees.
-It resolves.
-It searches.
-It enriches.
-It synthesizes.
-It displays.
-
-But it does not decide truth.
-
-The operator does.
-```
+<p align="center">
+  <strong>ROZOOKA // THE GAZER</strong><br>
+  A research console. A structured record. A human review.
+</p>
